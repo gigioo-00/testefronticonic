@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  align-items: center;
+  font-family: "MuseoModerno", sans-serif;
+}
+
+.metade-cima {
+  background-color: rgba(54, 88, 133, 1);
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  z-index: 1;
+}
+
+
+
+.tela-dividida {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.infos-tela-de-cima {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-top: 5%;
+}
+
+.icone-voltar {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  color: #ffffff;
+  font-size: 150%;
+  
+}
+
+.FeedBack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  color: #ffffff;
+  font-size: 130%;
+  font-family: "MuseoModerno";
+  font-weight: normal;
+}
+
+.BemVindo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8%;
+  color: #ffffff;
+  font-family: "MuseoModerno";
+  font-size: 240%;
+  font-weight: normal;
+}
+
+.textinho{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right:10%;
+  color: #ffffff;
+  font-family: "MuseoModerno";
+  font-size: 80%;
+  font-weight: normal;
+}
+
+.textinho2{
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  color:rgba(54, 88, 133, 1);
+  font-family: "MuseoModerno";
+  font-size: 120%;
+  font-weight: normal;
+  padding-top: 100%;
+
+}
+
+.infos-tela-de-baixo{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.input{
+  display: flex;
+  align-items: center;
+}
+
+
+
