@@ -2,21 +2,8 @@ body {
   display: flex;
   align-items: center;
   font-family: "MuseoModerno", sans-serif;
-}
-
-.metade-cima {
-  background-color: rgba(54, 88, 133, 1);
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
-  z-index: 1;
-}
-
-.tela-dividida {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
+  margin: 0;
+  overflow: hidden;
 }
 
 .infos-tela-de-cima {
@@ -44,10 +31,11 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 15px;
-  color:  rgba(54, 88, 133, 1);
+  color: rgba(54, 88, 133, 1);
   font-family: "MuseoModerno";
   font-weight: normal;
   font-size: 130%;
+  padding-top: 2%;
 }
 
 .textinho {
@@ -57,10 +45,11 @@ body {
   padding-top: 30%;
   padding-left: 10%;
   padding-right: 10%;
-  color:  rgba(54, 88, 133, 1);
+  color: rgba(54, 88, 133, 1);
   font-family: "MuseoModerno";
   font-size: 450%;
 }
+
 .textinho2 {
   display: flex;
   flex-direction: column;
@@ -73,25 +62,35 @@ body {
   font-weight: normal;
   margin-top: -10%;
 }
+
 .textinho3 {
-  color: #608EC9;           
+  color: #608EC9;
   font-family: "MuseoModerno", sans-serif;
-  font-size: 1rem;          
+  font-size: 1rem;
   text-align: center;
   margin-top: 15px;
 }
 
+#email::placeholder {
+  color: #365885;
+}
+
+#senha::placeholder {
+  color: #365885;
+
+}
+
 .link-cadastro {
-  color: #365885;               
+  color: #365885;
   text-decoration: none;
 }
 
 .infos-tela-de-baixo {
   position: absolute;
-  top: 50vh; 
+  top: 50vh;
   width: 100%;
   height: 50vh;
-  z-index: 3; 
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,14 +100,14 @@ body {
 
 .infos-tela-de-baixo-2 {
   position: absolute;
-  top: 70vh; 
+  top: 70vh;
   width: 100%;
   height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+
 }
 
 .input {
@@ -153,17 +152,7 @@ body {
     font-size: 130%;
     padding-top: 1%;
   }
-  .BemVindo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2%;
-    color: #ffffff;
-    font-family: "MuseoModerno";
-    font-size: 200%;
-    font-weight: normal;
-  }
-
+  
   .formulario-container {
     max-width: 80%;
   }
