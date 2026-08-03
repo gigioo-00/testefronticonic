@@ -50,38 +50,40 @@ body {
   font-size: 130%;
 }
 
-.BemVindo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 8%;
-  color: #ffffff;
-  font-family: "MuseoModerno";
-  font-size: 240%;
-  font-weight: normal;
-}
-
 .textinho {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 30%;
   padding-left: 10%;
   padding-right: 10%;
-  color: #ffffff;
+  color:  rgba(54, 88, 133, 1);
   font-family: "MuseoModerno";
-  font-size: 80%;
-  font-weight: normal;
+  font-size: 450%;
 }
-
 .textinho2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  color: rgba(54, 88, 133, 1);
+  display: flex;
+  align-items: center;
+  color: #608EC9;
   font-family: "MuseoModerno";
-  font-size: 120%;
+  font-size: 230%;
   font-weight: normal;
+  margin-top: -10%;
+}
+.textinho3 {
+  color: #608EC9;           
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 1rem;          
+  text-align: center;
+  margin-top: 15px;
+}
+
+.link-cadastro {
+  color: #365885;               
+  text-decoration: none;
 }
 
 .infos-tela-de-baixo {
@@ -90,6 +92,18 @@ body {
   width: 100%;
   height: 50vh;
   z-index: 3; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.infos-tela-de-baixo-2 {
+  position: absolute;
+  top: 70vh; 
+  width: 100%;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
