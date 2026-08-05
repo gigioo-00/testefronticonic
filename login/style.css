@@ -82,7 +82,7 @@ body {
 
 .link-cadastro {
   color: #365885;
- 
+
 }
 
 .infos-tela-de-baixo {
@@ -107,7 +107,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  z-index: 4;
 }
 
 .input {
@@ -152,7 +152,7 @@ body {
     font-size: 130%;
     padding-top: 1%;
   }
-  
+
   .formulario-container {
     max-width: 80%;
   }
