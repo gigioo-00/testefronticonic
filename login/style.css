@@ -18,14 +18,6 @@ body {
   padding-top: 5%;
 }
 
-.icone-estrelas {
-  display: flex;
-  flex-direction: column;
-  padding-left: 5%;
-  color: rgba(54, 88, 133, 1);
-  font-size: 150%;
-}
-
 .FeedBack {
   display: flex;
   flex-direction: row;
@@ -38,6 +30,15 @@ body {
   padding-top: 2%;
 }
 
+.link-feedback{
+  color: rgba(54, 88, 133, 1);
+  text-decoration: none;
+  padding-left: 5%;
+}
+
+.link-feedback a:active {
+  transform: scale(0.90); 
+}
 .textinho {
   display: flex;
   flex-direction: column;
