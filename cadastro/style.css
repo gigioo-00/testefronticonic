@@ -18,26 +18,14 @@ body {
   padding-top: 5%;
 }
 
-.infos-tela-de-cima {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 50vh;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding-top: 5%;
-}
-
-.FeedBack a {
+.NovoCadastro a {
   text-decoration: none;
   display: inline-flex;
   transition: transform 0.1s ease;
   padding-left: 5%;
 }
 
-.FeedBack a:active {
+.NovoCadastro a:active {
   transform: scale(0.90); 
 }
 
@@ -49,7 +37,7 @@ body {
   font-size: 150%;
 }
 
-.FeedBack {
+.NovoCadastro {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -64,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30%;
+  padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
   color: rgba(54, 88, 133, 1);
@@ -93,6 +81,16 @@ body {
   margin-top: 15px;
 }
 
+.textinho4 {
+  color:rgba(54, 88, 133, 1);
+  text-decoration: none;
+  margin: 15px 0 5px 0;
+}
+
+#text::placeholder {
+  color: #365885;
+}
+
 #email::placeholder {
   color: #365885;
 }
@@ -102,16 +100,11 @@ body {
 
 }
 
-.link-cadastro {
-  color: #365885;
-
-}
-
 .infos-tela-de-baixo {
   position: absolute;
-  top: 50vh;
+  top: 45vh;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   z-index: 3;
   display: flex;
   flex-direction: column;
@@ -141,9 +134,18 @@ body {
   display: flex;
   flex-direction: column;
   width: 85%;
-  gap: 15px;
+  gap:0;
   font-family: "MuseoModerno";
   font-weight: normal;
+}
+
+.campo-nome {
+  background-color: #608EC9;
+  border: none;
+  opacity: 0.5;
+  padding: 5%;
+  border-radius: 25px;
+  font-size: 90%;
 }
 
 .campo-email {
@@ -155,8 +157,18 @@ body {
   font-size: 90%;
 }
 
+.campo-senha {
+  background-color: #608EC9;
+  border: none;
+  opacity: 0.5;
+  padding: 5%;
+  border-radius: 25px;
+  font-size: 90%;
+}
+
 .botao-enviar {
   padding: 5%;
+  margin-top: 10%;
   background-color: rgba(54, 88, 133, 1);
   color: white;
   border: none;
@@ -180,6 +192,8 @@ body {
   }
 
   .campo-email,
+  .campo-senha,
+  .campo-nome 
   .botao-enviar {
     padding-top: 3%;
     padding-bottom: 3%;
