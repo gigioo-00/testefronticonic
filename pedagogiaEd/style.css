@@ -1,35 +1,42 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "MuseoModerno", sans-serif;
+  background-color: #f4f6f9;
+}
+
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  font-family: "MuseoModerno", sans-serif;
 }
 
 .header-topo {
   background-color: rgba(54, 88, 133, 1);
   width: 100%;
-  padding: 40px 20px 30px 20px;
+  padding: 10%;
   text-align: center;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
+  flex-shrink: 0;
 }
 
 .infos-tela-de-cima {
   position: absolute;
   top: 0;
   width: 100vw;
-  height: 50vh;
   z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: left;
   padding-top: 5%;
+  padding-left: 5%;
 }
 
 .Editar a {
   text-decoration: none;
   display: inline-flex;
   transition: transform 0.1s ease;
-  padding-left: 5%;
 }
 
 .Editar a:active {
@@ -37,9 +44,6 @@ body {
 }
 
 .icone-voltar {
-  display: flex;
-  flex-direction: column;
-  padding-left: 5%;
   color: #ffffff;
   font-size: 150%;
 }
@@ -57,12 +61,12 @@ body {
 
 .container-botoes {
   position: absolute;
-  top: 15%;
+  top: 13%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
   z-index: 5;
 }
 
@@ -83,7 +87,7 @@ body {
 }
 
 .btn.btn-deletar {
-  background-color: #FF4B4B;
+  background-color: #FF4B4B !important;
   color: white !important;
   border: none !important;
   padding: 10px 15px !important;
@@ -100,7 +104,7 @@ body {
 
 .btn.btn-confirmar {
   background-color: #7FFF78 !important;
-  color: #ffff !important;
+  color: #ffffff !important;
   border: none !important;
   padding: 10px 15px !important;
   border-radius: 8px;
@@ -114,60 +118,76 @@ body {
   transform: scale(1.05);
 }
 
-.card-aviso .data {
-    display: block;
-    font-size: 100%;
-    margin-bottom: 2%;
-    color: #ffffff;
-}
-
-.card-aviso .descricao {
-    font-size: 100%;
-    font-weight: 100%;
-    line-height: 1;
-    color: #ffffff;
-}
-.card-aviso.escuro {
+.card-aviso {
+  width: 92%;
+  max-width: 700px;
+  flex: 1; 
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-    background-color: #608EC9;
+  z-index: 3;
 }
 
+.card-aviso.escuro {
+  background-color: #365885;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
 
+.campo-data-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
+.label-data {
+  color: #ffffff;
+  font-size: 90%;
+  font-weight: 500;
+}
 
+.input-data {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "MuseoModerno", sans-serif;
+  outline: none;
+}
 
+.input-data:disabled,
+.textarea-conteudo:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
 
+.input-data::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
 
-@media (min-width: 768px) {
-  .textinho {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-    font-family: "MuseoModerno";
-    font-size: 130%;
-    padding-top: 1%;
-  }
+.textarea-conteudo {
+  flex: 1; 
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 15px;
+  color: #ffffff;
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 100%;
+  resize: none;
+  outline: none;
+}
 
-  .BemVindo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2%;
-    color: #ffffff;
-    font-family: "MuseoModerno";
-    font-size: 200%;
-    font-weight: normal;
-  }
+.textarea-conteudo::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
 
-  .formulario-container {
-    max-width: 80%;
-  }
-
-  .campo-email,
-  .botao-enviar {
-    padding-top: 3%;
-    padding-bottom: 3%;
-  }
+.textarea-conteudo:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: #ffffff;
 }
